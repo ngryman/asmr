@@ -17,7 +17,7 @@ test('show a list of 30 repo', async t => {
 })
 
 test('accept target as a selector', async t => {
-  await asmr('github', 'body')
+  await testAsmr('github', 'body')
   t.is(document.body.children.length, 30)
 })
 
