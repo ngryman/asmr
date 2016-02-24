@@ -4,7 +4,8 @@
   "description": "Show a list of your repos. That's it!",
   "main": "index.js",
   "scripts": {
-    "test": "letenv nyc ava -s"
+    "test": "letenv nyc ava -s",
+    "coverage": "nyc report --reporter=text-lcov | codecov"
   },
   "files": [
     "index.js"
@@ -29,6 +30,7 @@
   "devDependencies": {
     "ava": "^0.12.0",
     "babel-eslint": "^5.0.0",
+    "codecov.io": "^0.1.6",
     "eslint": "^2.2.0",
     "eslint-config-ngryman": "^1.0.0",
     "jsdom": "^8.0.4",
