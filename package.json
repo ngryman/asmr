@@ -1,0 +1,38 @@
+{
+  "name": "asmr",
+  "version": "0.0.0",
+  "description": "Show a list of your repos. That's it!",
+  "main": "index.js",
+  "scripts": {
+    "test": "letenv nyc ava -s"
+  },
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ngryman/showrepos"
+  },
+  "keywords": [
+    "github",
+    "repo",
+    "repos",
+    "repositories",
+    "show",
+    "display",
+    "list",
+    "render",
+    "html"
+  ],
+  "author": "Nicolas Gryman <ngryman@gmail.com> (http://ngryman.sh/)",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.12.0",
+    "babel-eslint": "^5.0.0",
+    "eslint": "^2.2.0",
+    "eslint-config-ngryman": "^1.0.0",
+    "jsdom": "^8.0.4",
+    "letenv": "^0.2.0",
+    "nyc": "^5.6.0"
+  }
+}
