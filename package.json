@@ -1,6 +1,6 @@
 {
   "name": "asmr",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Show a list of your repos. That's it!",
   "main": "index.js",
   "scripts": {
