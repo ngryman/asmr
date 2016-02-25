@@ -29,18 +29,18 @@ asmr('ngryman', 'body', { page: 1, perPage: 10 })
 
 // custom template
 asmr('ngryman', 'body', {
-	template: '<a href={html_url}>{name}</a>'
+  template: '<a href={html_url}>{name}</a>'
 })
 
 // custom processing
 asmr('ngryman', 'body', { render: false })
-	.then(function(baton) {
-		baton.repos.sort(function(r1, r2) {
-			return r2.stargazers_count - r1.stargazers_count
-		})
-		return baton
-	})
-	.then(asmr.render)
+  .then(function(baton) {
+    baton.repos.sort(function(r1, r2) {
+      return r2.stargazers_count - r1.stargazers_count
+    })
+    return baton
+  })
+  .then(asmr.render)
 ```
 
 ## API
