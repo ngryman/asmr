@@ -24,7 +24,7 @@ test('accept target as a selector', async t => {
 test('paginate the list of repos', async t => {
   const repos = await testAsmr('github', t.context, { page: 2 })
   for (let i = 0; i < repos.length; i++) {
-    t.notSame(repos[i], firstPageRepos[i])
+    t.notDeepEqual(repos[i], firstPageRepos[i])
   }
 })
 
@@ -36,7 +36,7 @@ test('can limit the list of repos', async t => {
 test('order by update date by default', async t => {
   const repos = await testAsmr('github', t.context)
   for (let i = 1; i < repos.length; i++) {
-    t.ok(repos[i].updated_at < repos[i - 1].updated_at)
+    t.true(repos[i].updated_at < repos[i - 1].updated_at)
   }
 })
 
@@ -45,7 +45,7 @@ test('rejects an invalid user', async t => {
   try {
     await testAsmr('idonotexistbob', t.context)
   }
-  catch(err) {
+  catch (err) {
     t.is(err.message, 'Invalid user.')
   }
 })
