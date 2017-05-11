@@ -1,5 +1,7 @@
 # asmr [![travis][travis-image]][travis-url] [![codecov][codecov-image]][codecov-url]
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ngryman/asmr.svg)](https://greenkeeper.io/)
+
 [travis-image]: https://img.shields.io/travis/ngryman/asmr.svg?style=flat
 [travis-url]: https://travis-ci.org/ngryman/asmr
 [codecov-image]: https://img.shields.io/codecov/c/github/ngryman/asmr.svg
